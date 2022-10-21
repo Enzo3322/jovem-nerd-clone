@@ -1,0 +1,166 @@
+/* normalize styles */
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: #fff;
+	font-family: Inter;
+}
+
+html,
+body {
+	background-color: #282830;
+}
+img {
+	border-radius: 6px;
+	max-width: 100%;
+	margin-bottom: 10px;
+}
+
+h3 {
+	font-size: 16px;
+}
+h2 {
+	font-size: 22px;
+}
+
+.container {
+	max-width: 1230px;
+	margin: 0 auto;
+}
+
+.container .flex-two-columns {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 14px 48px;
+}
+
+.container .flex-two-columns .post-container {
+	max-width: 579px;
+	width: 50%;
+}
+
+.container .flex-two-columns .post-container img {
+	border-radius: 6px;
+}
+
+.container .flex-two-columns .post-container h2 {
+	line-height: 34px;
+	font-size: 28px;
+}
+
+.container .flex-two-columns-highlights {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 14px 48px;
+}
+
+.container .flex-two-columns-highlights .highlights {
+	width: 66%;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+.container .flex-two-columns-highlights .highlights .post-container {
+	width: 47%;
+}
+
+.container .flex-two-columns-highlights .list {
+	width: 33%;
+}
+.container .flex-two-columns-highlights .list .title-container {
+	display: flex;
+	align-items: center;
+}
+
+.container .flex-two-columns-highlights .list .title-container h3 {
+	font-size: 26px;
+	color: #3bb4b4;
+	font-weight: bold;
+	white-space: nowrap;
+	margin-right: 10px;
+}
+
+.container .flex-two-columns-highlights .list .title-container span {
+	border: 1px solid #3bb4b4;
+	height: 0;
+	width: 100%;
+}
+
+.container .flex-two-columns-highlights .list .items .list-item {
+	display: flex;
+	margin-bottom: 24px;
+}
+
+.container .flex-two-columns-highlights .list .items .list-item:first-child {
+	margin-top: 24px;
+}
+/* the number before text on highlight list */
+.container .flex-two-columns-highlights .list .items .list-item p:first-child {
+	font-size: 32px;
+	font-weight: bold;
+	margin-right: 12px;
+}
+.container .flex-two-columns-highlights .list .items .list-item p {
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.after-highlights-container {
+	padding: 0 14px 48px;
+	margin-top: 20px;
+}
+
+.after-highlights-container .flex-three-columns {
+	display: flex;
+	gap: 20px;
+}
+
+.after-highlights-container .flex-three-columns .post-container {
+	width: 33.33%;
+}
+
+.after-highlights-container .header-content {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 24px;
+}
+
+.after-highlights-container .header-content h3 {
+	color: #3bb4b4;
+	font-size: 26px;
+}
+.after-highlights-container .header-content p {
+	color: #3bb4b4;
+}
+
+@media (max-width: 40rem) {
+	.container .flex-two-columns {
+		flex-direction: column;
+	}
+	.container .flex-two-columns .post-container {
+		width: 100%;
+		margin-top: 30px;
+	}
+	.after-highlights-container .flex-three-columns {
+		flex-direction: column;
+	}
+	.after-highlights-container .flex-three-columns .post-container {
+		width: 100%;
+	}
+	.container .flex-two-columns-highlights {
+		flex-direction: column;
+	}
+	.container .flex-two-columns-highlights .highlights {
+		width: 100%;
+		margin-bottom: 50px;
+	}
+	.container .flex-two-columns-highlights .highlights .post-container {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.container .flex-two-columns-highlights .list {
+		width: 100%;
+	}
+}
