@@ -6,6 +6,7 @@
 	box-sizing: border-box;
 	color: #fff;
 	font-family: Inter;
+	transition: all 0.3s ease;
 }
 
 html,
@@ -28,6 +29,7 @@ h2 {
 .container {
 	max-width: 1230px;
 	margin: 0 auto;
+	margin-top: 250px;
 }
 
 .container .flex-two-columns {
@@ -133,6 +135,80 @@ h2 {
 }
 .after-highlights-container .header-content p {
 	color: #3bb4b4;
+}
+
+.header-component {
+	width: 100%;
+	background-color: #1e1e26;
+	height: 130px;
+	position: fixed;
+	align-items: center;
+	display: flex;
+	top: 0;
+}
+
+.header-submenu {
+	background-color: #14141c;
+	top: 130px;
+	height: 72px;
+	width: 100%;
+	position: fixed;
+}
+.header-submenu.scroll {
+	opacity: 0;
+}
+
+.bg {
+	max-width: 1230px;
+	display: flex;
+	margin: 0 auto;
+	align-items: center;
+	justify-content: start;
+	height: 100%;
+}
+
+.header-submenu .items {
+	display: flex;
+	list-style: none;
+	margin-left: 30px;
+}
+
+.header-submenu .items li {
+	margin-left: 25px;
+}
+
+.header-component.scroll {
+	width: 100%;
+	background-color: #1e1e26;
+	height: 80px;
+	position: fixed;
+}
+.header-component .header-container {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1230px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.header-component .header-container img {
+	width: 140px;
+}
+
+.header-component.scroll .header-container img {
+	width: 100px;
+}
+
+.header-component .header-container ul {
+	list-style: none;
+	display: flex;
+	align-items: center;
+}
+.header-component .header-container ul li {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	margin-right: 20px;
 }
 
 @media (max-width: 40rem) {
